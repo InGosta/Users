@@ -1,0 +1,54 @@
+.wrapper
+{
+	
+	margin: auto;
+
+}
+
+.table
+{
+
+	margin: auto;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+font-size: 14px;
+border-collapse: collapse;
+text-align: center;
+cursor: pointer;
+}
+
+.table th,td
+{
+	border-style: solid;
+border-width: 0 1px 1px 0;
+border-color: white;
+}
+
+.table  td {
+background: #D8E6F3;
+}
+
+.table th
+{
+	background: #AFCDE7;
+color: white;
+padding: 10px 20px;
+}
+
+.wrapperMenu
+{
+	text-align: center;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+}
+
+.addMenu
+{
+	
+	display: inline-block;
+}
+
+form p
+{
+	display: block;
+	width: 20px;
+}
