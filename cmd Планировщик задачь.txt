@@ -1,0 +1,11 @@
+schtasks /create /tn "XamppCron" /tr "D:\xampp\php\php.exe D:\xampp\htdocs\Users\LogStart.php" /sc daily /mo 1
+
+schtasks /create /tn "XamppCron" /tr "D:\xampp\php\php.exe D:\xampp\htdocs\Users\LogStart.php" /sc minute /mo 1
+
+schtasks /delete /tn "XamppCron"
+
+schtasks /create /tn "XamppCron" /tr "php D:\xampp\htdocs\Users\LogStart.php" /sc minute /mo 1
+
+schtasks /create /tn "XamppCron" /tr "php D:\xampp\htdocs\Users\LogStart.php" /sc daily /mo 1
+
+schtasks /create /tn "XamppCron" /tr "D:\xampp\htdocs\Users\cron.bat" /sc daily /mo 1

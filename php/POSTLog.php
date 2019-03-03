@@ -9,15 +9,11 @@ $filepath="../logs/log.txt";
    $str_value = file_get_contents ($filepath);
    $array = unserialize($str_value);
 
-$url="https://script.google.com/macros/s/AKfycbwlUPKuhpOsL5xA_8MSMj31sf8hWvynMh1dINxulegZjuFLqyYL/exec?p1=Добавлено%20".$array['Добавлено']."&p2=Удалено%20".$array['Удалено'];
 
-$contents = file_get_contents($url);
+
  
 //If $contents is not a boolean FALSE value.
-if($contents !== false){
-    //Print out the contents.
-    echo $contents;
-}
+
 /*echo 'https://script.google.com/macros/s/AKfycbwlUPKuhpOsL5xA_8MSMj31sf8hWvynMh1dINxulegZjuFLqyYL/exec?p1=Добавлено%20'.$array['Добавлено'].'&p2=Удалено%20'.$array['Удалено'];
    if( $curl = curl_init() ) {
     curl_setopt($curl, CURLOPT_URL, 'https://script.google.com/macros/s/AKfycbwlUPKuhpOsL5xA_8MSMj31sf8hWvynMh1dINxulegZjuFLqyYL/exec?p1=Добавлено%20'.$array['Добавлено'].'11&p2=Удалено%20'.$array['Удалено']);
